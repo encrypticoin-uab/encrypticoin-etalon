@@ -78,7 +78,7 @@ setup(
         "License :: OSI Approved :: Apache Software License",
     ],
     packages=find_packages(where=HERE, include=["encrypticoin_etalon"]),
-    # package_data=package_data,
+    package_data=package_data,
     install_requires=install_requirements,
     # entry_points={"console_scripts": console_scripts},
     extras_require=dict(requirements),
