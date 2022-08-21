@@ -12,7 +12,7 @@ with open(os.path.join(HERE, "README.md"), encoding="utf-8") as f:
 
 requirements = defaultdict(list)
 for name in os.listdir(os.path.join(HERE, "requirements")):
-    if name not in ("base.in",):
+    if name not in ("base.in", "test.in"):
         continue
     reqs = requirements[name.rpartition(".")[0]]
     with open(os.path.join(HERE, "requirements", name)) as f:
@@ -77,7 +77,7 @@ setup(
         "Intended Audience :: Developers",
         "License :: OSI Approved :: Apache Software License",
     ],
-    packages=find_packages(where=HERE, include=["encrypticoin_etalon"]),
+    packages=find_packages(where=HERE, include=["encrypticoin_etalon*"]),
     package_data=package_data,
     install_requires=install_requirements,
     # entry_points={"console_scripts": console_scripts},
