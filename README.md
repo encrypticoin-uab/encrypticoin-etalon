@@ -13,3 +13,9 @@ The contract is found at `encrypticoin_etalon/contract/BEP20EtalonToken.sol`. It
 The contract is wrapped in a Python package for easy development and distribution in the relevant server systems.
 
 Testing of the contract is performed in other environments, this repository is purely for the contract itself. 
+
+A source distribution package is available from PyPI named `encrypticoin-etalon`:
+
+```
+pip install encrypticoin-etalon
+```

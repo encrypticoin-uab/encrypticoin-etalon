@@ -1,5 +1,8 @@
 # encrypticoin_etalon
 
+## 0.3.1
+- Improved readme and metadata
+
 ## 0.3.0
 - Fixed packaging for PyPI
 - Updated metadata

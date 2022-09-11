@@ -70,18 +70,10 @@ setup(
     license="Apache 2.0",
     classifiers=[
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.8",
-        "Programming Language :: Python :: 3.9",
-        "Programming Language :: Python :: 3.10",
-        "Programming Language :: Python :: Implementation :: CPython",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: Apache Software License",
     ],
-    packages=[
-        p
-        for p in find_packages(where=HERE, include=["encrypticoin_etalon*"])
-        if not p.startswith("encrypticoin_etalon_")
-    ],
+    packages=find_packages(where=HERE, include=["encrypticoin_etalon*"]),
     package_data=package_data,
     install_requires=install_requirements,
     # entry_points={"console_scripts": console_scripts},
