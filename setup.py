@@ -55,7 +55,7 @@ if package_data != {
 
 
 # Manually cleaning before build is required.
-for p in [os.path.join(HERE, "build"), os.path.join(HERE, "dist"), os.path.join(HERE, "encrypticoin-etalon.egg-info")]:
+for p in [os.path.join(HERE, "build"), os.path.join(HERE, "dist"), os.path.join(HERE, "encrypticoin_etalon.egg-info")]:
     if os.path.exists(p):
         shutil.rmtree(p)
 
@@ -77,7 +77,11 @@ setup(
         "Intended Audience :: Developers",
         "License :: OSI Approved :: Apache Software License",
     ],
-    packages=find_packages(where=HERE, include=["encrypticoin_etalon*"]),
+    packages=[
+        p
+        for p in find_packages(where=HERE, include=["encrypticoin_etalon*"])
+        if not p.startswith("encrypticoin_etalon_")
+    ],
     package_data=package_data,
     install_requires=install_requirements,
     # entry_points={"console_scripts": console_scripts},
