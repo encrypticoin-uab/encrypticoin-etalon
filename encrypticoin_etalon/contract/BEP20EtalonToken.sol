@@ -1,9 +1,9 @@
-// SPDX-License-Identifier: Apache-2.0
+// SPDX-License-Identifier: MIT
 
-pragma solidity 0.8.13;
+pragma solidity ^0.8.17;
 
-import "./openzeppelin-contracts/4.5.0/token/ERC20/ERC20.sol";
-import "./openzeppelin-contracts/4.5.0/access/Ownable.sol";
+import "./openzeppelin-contracts/4.7.3/token/ERC20/ERC20.sol";
+import "./openzeppelin-contracts/4.7.3/access/Ownable.sol";
 import "./common/1/IBEP20.sol";
 
 contract BEP20EtalonToken is ERC20, Ownable, IBEP20 {

@@ -43,11 +43,11 @@ if package_data != {
         "contract/BEP20EtalonToken.sol.bin",
         "contract/BEP20EtalonToken.sol.sha256",
         "contract/common/1/IBEP20.sol",
-        "contract/openzeppelin-contracts/4.5.0/access/Ownable.sol",
-        "contract/openzeppelin-contracts/4.5.0/token/ERC20/ERC20.sol",
-        "contract/openzeppelin-contracts/4.5.0/token/ERC20/IERC20.sol",
-        "contract/openzeppelin-contracts/4.5.0/token/ERC20/extensions/IERC20Metadata.sol",
-        "contract/openzeppelin-contracts/4.5.0/utils/Context.sol",
+        "contract/openzeppelin-contracts/4.7.3/access/Ownable.sol",
+        "contract/openzeppelin-contracts/4.7.3/token/ERC20/ERC20.sol",
+        "contract/openzeppelin-contracts/4.7.3/token/ERC20/IERC20.sol",
+        "contract/openzeppelin-contracts/4.7.3/token/ERC20/extensions/IERC20Metadata.sol",
+        "contract/openzeppelin-contracts/4.7.3/utils/Context.sol",
         "contract/openzeppelin-contracts/README.txt",
     ]
 }:
