@@ -1,6 +1,11 @@
 # encrypticoin_etalon
 
-## 1.0.0
+## 0.3.0
+- Fixed packaging for PyPI
+- Updated metadata
+- Removed unused python testing items
+
+## 0.2.0
 - Updated the contract dependencies and compiler
 
 ## 0.1.4

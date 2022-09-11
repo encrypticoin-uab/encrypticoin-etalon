@@ -4,5 +4,5 @@ bumpversion
 pip-tools
 pip-compile-multi
 py-solc-x
-tox
+twine
 wheel

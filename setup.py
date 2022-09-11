@@ -12,7 +12,7 @@ with open(os.path.join(HERE, "README.md"), encoding="utf-8") as f:
 
 requirements = defaultdict(list)
 for name in os.listdir(os.path.join(HERE, "requirements")):
-    if name not in ("base.in", "test.in"):
+    if name not in ("base.in",):
         continue
     reqs = requirements[name.rpartition(".")[0]]
     with open(os.path.join(HERE, "requirements", name)) as f:
@@ -42,7 +42,6 @@ if package_data != {
         "contract/BEP20EtalonToken.sol.abi",
         "contract/BEP20EtalonToken.sol.bin",
         "contract/BEP20EtalonToken.sol.sha256",
-        "contract/common/1/IBEP20.sol",
         "contract/openzeppelin-contracts/4.7.3/access/Ownable.sol",
         "contract/openzeppelin-contracts/4.7.3/token/ERC20/ERC20.sol",
         "contract/openzeppelin-contracts/4.7.3/token/ERC20/IERC20.sol",
@@ -64,7 +63,8 @@ setup(
     version=VERSION,
     description="Etalon token implementation by Encrypticoin UAB",
     long_description=long_description,
-    url="etalon.cash",
+    long_description_content_type="text/markdown",
+    url="https://github.com/encrypticoin-uab/encrypticoin-etalon",
     author="Nándor Mátravölgyi",
     author_email="dev@etalon.cash",
     license="Apache 2.0",
