@@ -41,13 +41,15 @@ if package_data != {
         "contract/BEP20EtalonToken.sol",
         "contract/BEP20EtalonToken.sol.abi",
         "contract/BEP20EtalonToken.sol.bin",
+        "contract/BEP20EtalonToken.sol.scv",
         "contract/BEP20EtalonToken.sol.sha256",
-        "contract/openzeppelin-contracts/4.7.3/access/Ownable.sol",
-        "contract/openzeppelin-contracts/4.7.3/token/ERC20/ERC20.sol",
-        "contract/openzeppelin-contracts/4.7.3/token/ERC20/IERC20.sol",
-        "contract/openzeppelin-contracts/4.7.3/token/ERC20/extensions/IERC20Metadata.sol",
-        "contract/openzeppelin-contracts/4.7.3/utils/Context.sol",
-        "contract/openzeppelin-contracts/README.txt",
+        "contract/IBEP20.sol",
+        "contract/README.txt",
+        "contract/openzeppelin-contracts-4.7.3-Context.sol",
+        "contract/openzeppelin-contracts-4.7.3-ERC20.sol",
+        "contract/openzeppelin-contracts-4.7.3-IERC20.sol",
+        "contract/openzeppelin-contracts-4.7.3-IERC20Metadata.sol",
+        "contract/openzeppelin-contracts-4.7.3-Ownable.sol",
     ]
 }:
     raise Exception(f"Package data has changed\n{str(package_data)}")
